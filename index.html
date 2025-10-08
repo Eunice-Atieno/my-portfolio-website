@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/d35a484646.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+        <img src="image/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+             <li><a href="#about">About</a></li>
+              <li><a href="#learning-journey">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AWS Cloud Practitioner</p>
+            <h1>Hello, my name is <span>Eunice</span><br> An IT enthusiast </h1>
+        </div>
+      </div>
+    </div>
+    <!--About-->
+    <div id="about">
+    <div class="container"> 
+    <div class="row">
+    <div class="about-col-1">
+      <img src="image/user.png">
+      <a href="image/My CV.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>Download CV</a>
+
+    </div>
+    
+    <div class="about-col-2">
+      <h1 class="sub-title">About Me</h1>
+      <p>
+      Hi, I’m Eunice, an aspiring IT professional with a keen interest in <span> networking</span>, <span>Cloud Computing</span>, and <span> cybersecurity </span>.<br>Technology is constantly evolving, and I am passionate about building secure, efficient, and scalable digital solutions that empower businesses and individuals.<br>
+
+With a strong foundation in network infrastructure, cloud technologies, and cybersecurity best practices, I am driven to explore innovative ways to optimize IT systems, improve security frameworks, and enhance digital connectivity.  
+      </p>
+      <div class="tab-title">
+        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+        <p class="tab-link" onclick="opentab('education')">Education</p>
+      </div>
+      <div class="tab-content active-tab" id="skills">
+        <ul>
+        <li><span>Networking</span><br>Applying basic networking skills and troubleshooting connectivity issues.</li>
+        <li><span>Cloud Computing</span><br>Working with cloud concepts, APIs, and AWS services.</li>
+        <li><span>cybersecurity</span><br>Developing expertise in security analysis and audit practices.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="experience">
+        <ul>
+        <li><span></span><br></li>
+        <li><span>June – Aug 2025</span><br>Attachment at National Housing Corporation.</li>
+        <li><span>May – Aug 2024</span><br>Attachment at Nairobi City Water & Sewerage Company Ltd.</li>
+        </ul>
+      </div>
+      <div class="tab-content" id="education">
+        <ul>
+        <li><span>2022–Present</span><br>Bachelor of Science in Information Technology at Multimedia University of Kenya</li>
+        <li><span>2025 September–Present</span><br>Cloud & Network Security at CyberShujaa Program.</li>
+        <li><span>May – Aug 2025</span><br>AWS Cloud Practitioner training at AWS re/Start Program.</li>
+        <li><span>2018–2021</span><br>Secondary Education at Dudi Girls High School.</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+</div>
+    </div>
+    <section id="learning-journey">
+  <div class="container">
+    <h2 class="section-title">My Learning Journey</h2>
+    <p class="intro">
+      I am actively developing my skills in networking, cloud computing, and cybersecurity, continuously exploring industry best practices and emerging technologies. As I gain hands-on experience, I am building a strong foundation in IT infrastructure, security solutions, and cloud services.
+    </p>
+
+    <div class="learning-list">
+      <div class="learning-item">
+        <h3>Networking</h3>
+        <ul>
+          <li>Designing and configuring networks for efficiency and security through Cisco program</li>
+          <li>Exploring best practices for network optimization and troubleshooting</li>
+        </ul>
+      </div>
+
+      <div class="learning-item">
+        <h3>Cloud Computing</h3>
+        <ul>
+          <li>Completed the AWS re/Start program and earned the AWS Certified Cloud Practitioner certification</li>
+          <li>Learnt AWS services including EC2, S3, VPC, and CloudFormation</li>
+          <li>Deployed and managed virtual environments securely</li>
+        </ul>
+      </div>
+
+      <div class="learning-item">
+        <h3>Cybersecurity</h3>
+        <ul>
+          <li>Learning cybersecurity fundamentals through CyberShujaa training program</li>
+          <li>Understanding threat detection, encryption, and access control</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <i class="fa-brands fa-aws"></i>
+            <h2>How to Remotely Run Commands on an EC2 Instance</h2>
+            <p>You can remotely run commands on an EC2 instance using AWS Systems Manager without needing SSH access. By attaching an IAM role with SSM permissions and ensuring the instance has SSM Agent installed, you can execute shell or PowerShell scripts directly from the AWS console.</p>
+            <a href="https://innovatewitheunice.odoo.com/">See more</a>
+            </div>
+            <div class="work">
+              <i class="fa-brands fa-aws"></i>
+            <h2>How To Host a Static Website on Amazon Web Services</h2>
+            <p>To host a static website on AWS, you can use Amazon S3 to store your HTML, CSS, and JavaScript files. By enabling static website hosting on the S3 bucket and setting proper permissions, your site becomes publicly accessible via an auto-generated URL. This method is cost-effective, scalable, and ideal for lightweight web projects.</p>
+            <a href="https://innovatewitheunice.odoo.com/">See more</a>
+            </div>
+            <div class="work">
+              <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+              <p>This café website shows how I used HTML and CSS to build a clean and responsive layout for a small business.</p>
+              <a href="https://eunice-atieno.github.io/cafe-site/">See more</a>
+          </div>
+          <div class="work">
+            <i class="fa-brands fa-redhat"></i>
+            <h2>Using wireshark To View Network Traffic</h2>
+             <p>This explores how data packets travel across networks using Wireshark. It includes analysis of ICMP traffic, ARP resolution, and the differences between local and remote communication. The report highlights how MAC and IP addresses function across OSI layers to route data effectively.</p>
+              <a href="https://github.com/Eunice-Atieno/cafe-site/blob/main/Using%20Wireshark.pdf">See more</a>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i>0745927823</p>
+            <div class="social-icons">
+              <a href="https://github.com/Eunice-Atieno"><i class="fa-brands fa-square-github"></i></a>
+              <a href="https://x.com/home"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-square-linkedin"></i></a>
+            </div> 
+          </div>
+          <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Eunice. Made by me<i class="fa-solid fa-heart"></i></p>
+      </div>
+      </div>
+   
+    <script>
+      var tablink= document.getElementsByClassName("tab-link");
+      var tabcontent= document.getElementsByClassName("tab-content");
+      function opentab(tabname){
+        for(tablinks of tablink){
+          tablinks.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontent){
+          tabcontents.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+        
+      }
+
+    </script>
+    <script>
+       var sidemen= document.getElementById("sidemenu");
+       function openmenu(){
+        sidemen.style.right = "0";
+
+       }
+       function closemenu(){
+        sidemen.style.right = "-200px";
+      }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz85ysmmE9bDCt9Dz8fik9cx9Urgocp3E8WvBL8ZHSjEh_0iu2AGcpOLxSkZAX8tpnhGg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= " Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTM= ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
